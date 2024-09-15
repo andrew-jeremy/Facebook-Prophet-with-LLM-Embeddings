@@ -14,7 +14,9 @@ Usage
 Clone the repository and install the required dependencies:
 
 git clone https://github.com/yourusername/prophet-pytorch-flight-delay.git
+
 cd prophet-pytorch-flight-delay
+
 pip install -r requirements.txt
 
 Modify the prophet_pytorch_flight_delay.py file to load your custom flight delay dataset, replacing the example data.
@@ -26,20 +28,26 @@ python prophet_pytorch_flight_delay.py
 This will train the hybrid Prophet-PyTorch model and use it to predict flight delays for future time periods.
 
 Example Data Format
+
 The input dataset should be a pandas DataFrame with at least the following columns:
 
 ds: A column containing datetime values representing the time index for Prophet.
 y: The target column, representing the flight delay value (or another time series value you are trying to predict).
 categorical_data: Categorical values such as airport pairs, airline names, etc.
 
-import pandas as pd
+```python
+# This is a Python code snippet
 import numpy as np
+import pandas as pd
 
 data = pd.DataFrame({
     'ds': pd.date_range(start='2022-01-01', periods=100, freq='D'),
     'y': np.random.rand(100),  # Replace with actual time series flight delay data
     'categorical_data': ['JFK-LAX', 'LAX-SFO'] * 50  # Example categorical data
 })
+
+print(data.head())
+```
 
 Output
 
