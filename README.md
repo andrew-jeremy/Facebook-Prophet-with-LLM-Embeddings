@@ -2,7 +2,8 @@
 Description
 The project integrates two core components:
 
-Time Series Forecasting with Prophet: Facebook Prophet is used to handle the time series component of the flight delay data, capturing trends, seasonality, and making future delay predictions.
+Time Series Forecasting with Prophet: 
+Facebook Prophet is used to handle the time series component of the flight delay data, capturing trends, seasonality, and making future delay predictions.
 
 Categorical Feature Embedding with BERT (PyTorch): Pre-trained BERT models from Hugging Face are used to generate embeddings for categorical features such as airport pairs (e.g., JFK-LAX) and airline names. These embeddings are then combined with the time series data to provide a more holistic prediction model.
 
