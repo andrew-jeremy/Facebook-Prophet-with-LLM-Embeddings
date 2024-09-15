@@ -32,7 +32,9 @@ Example Data Format
 The input dataset should be a pandas DataFrame with at least the following columns:
 
 ds: A column containing datetime values representing the time index for Prophet.
+
 y: The target column, representing the flight delay value (or another time series value you are trying to predict).
+
 categorical_data: Categorical values such as airport pairs, airline names, etc.
 
 ```python
